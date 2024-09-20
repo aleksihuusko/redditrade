@@ -67,21 +67,20 @@ ReddiTrade is a Next.js-based web application that provides real-time stock sent
 
 The project includes an API route that fetches stock sentiment data:
 
-```
-typescript
+```typescript
 import { NextResponse } from "next/server";
 export async function GET() {
-try {
-const response = await fetch("https://tradestie.com/api/v1/apps/reddit");
-const data = await response.json();
-return NextResponse.json(data);
-} catch (error) {
-console.error(error);
-return NextResponse.json(
-{ error: "Failed to fetch stock data" },
-{ status: 500 }
-);
-}
+  try {
+    const response = await fetch("https://tradestie.com/api/v1/apps/reddit");
+    const data = await response.json();
+    return NextResponse.json(data);
+  } catch (error) {
+    console.error(error);
+    return NextResponse.json(
+      { error: "Failed to fetch stock data" },
+      { status: 500 }
+    );
+  }
 }
 ```
 
