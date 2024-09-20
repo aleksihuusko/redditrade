@@ -2,6 +2,8 @@
 
 ReddiTrade is a Next.js-based web application that provides real-time stock sentiment analysis from the WallStreetBets subreddit. This project aims to help investors and traders gauge market sentiment by analyzing discussions and trends on one of the most influential retail investing communities.
 
+Live preview: https://redditrade.vercel.app/
+
 ## Features
 
 - Real-time stock sentiment data from WallStreetBets
